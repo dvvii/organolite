@@ -1,0 +1,16 @@
+#N canvas 681 583 738 469 12;
+#X obj 240 149 inlet~;
+#X obj 248 359 outlet~;
+#X obj 240 299 vcf~;
+#X obj 252 268 sig~;
+#X obj 252 237 * 400;
+#X obj 293 237 * 10;
+#X obj 252 185 r filt-f\$1;
+#X obj 293 207 r filt-q\$1;
+#X connect 0 0 2 0;
+#X connect 2 1 1 0;
+#X connect 3 0 2 1;
+#X connect 4 0 3 0;
+#X connect 5 0 2 2;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
